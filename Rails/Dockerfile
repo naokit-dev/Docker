@@ -22,8 +22,5 @@ ENTRYPOINT ["entrypoint.sh"]
 #ソケット接続するのでいらないはず
 #EXPOSE 3000
 
-# Start the main process.
-#CMD ["rails", "server", "-b", "0.0.0.0"]
-
 # puma.sockを配置するディレクトリを作成
-RUN mkdir -p tmp
+RUN mkdir -p tmp/sockets
